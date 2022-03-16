@@ -18,7 +18,7 @@ class AddTodo extends Component {
         return(
             <div>
                 <input type='text' ref={this.input}/>
-                <button onClick={(e) => this.inserirItem(e)}>Adicionar Item</button>
+                <button onClick={(e) => this.inserirItem(e).bind(this)}>Adicionar Item</button>
             </div>
         )
     }
